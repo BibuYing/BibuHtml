@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>表单标签</title>
+</head>
+
+<body>
+    <form method="post" action="save.php">
+        <!-- label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。如果你在 label 标签内点击文本，就会触发此控件。就是说，当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上（就自动选中和该label标签相关连的表单控件上） -->
+        <label for="username">用户名:</label>
+        <!-- 当type="text"时，输入框为文本输入框; -->
+        <input type="text" name="username" id="username" value="请输入账号" />
+        <br/><br/>
+        <label for="pass">密码:</label>
+        <!-- 当type="password"时, 输入框为密码输入框。 -->
+        <input type="password" name="pass" id="pass" value="" />
+        <br/><br/>
+        <!-- 文本输入域 50列，10行-->
+        <label for="username">备注</label><br/>
+        <textarea cols="50" rows="10">在这里输入内容...</textarea>
+        <br/><br/>
+        <!-- 单选框   name值统一，单选逻辑才会成立 -->
+        <input type="radio" value="男" name="sex" checked="checked" />
+        男
+        <input type="radio" value="女" name="sex" />
+        女
+        <br/><br/>
+
+        <!-- 复选框 -->
+        喜欢什么运动<br/>
+        <input type="checkbox" name="" value="跑步" checked="checked" />跑步<br/>
+        <input type="checkbox" name="" value="游泳" />游泳<br/>
+        <input type="checkbox" name="" value="健身" />健身<br/>
+
+        <br/><br/>
+        <!-- 下拉选择 -->
+       爱好<br/>
+        <select>
+            <option value="读书">读书</option>
+            <option value="看报" selected="selected">看报</option>
+            <option value="游戏">游戏</option>
+        </select>
+        <br/><br/>
+        <!-- 提交 -->
+        <input type="submit" value="确定" name="submit" />
+        <!-- 重置 -->
+        <input type="reset" value="重置" name="reset" />
+    </form>
+</body>
+
+</html>
+
+<!-- 
+    1.<form> ：<form>标签是成对出现的，以<form>开始，以</form>结束。
+
+2.action ：浏览者输入的数据被传送到的地方,比如一个PHP页面(save.php)。
+
+3.method ： 数据传送的方式（get/post）。 
+
+-->
