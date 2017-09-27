@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>垂直居中</title>
+    <style>
+        h2 {
+            margin: 0;
+            height: 100px;
+            background: #ccc;
+            margin: 2px;
+        }
+
+        .wrap h2 {
+            margin: 0;
+            background: #ccc;
+            margin: 2px;
+            /* 通过设置行高等于高度的方法，使内容居中，不过内容不能超过一行 */
+            height: 100px;
+            line-height: 100px;
+        }
+
+        tr .wrap {
+            height: 300px;
+            background: #ccc
+        }
+
+        .container {
+            height: 300px;
+            background: #ccc;
+            display: table-cell;
+            /*IE8以上及Chrome、Firefox*/
+            vertical-align: middle;
+            /*IE8以上及Chrome、Firefox*/
+        }
+    </style>
+</head>
+
+<body>
+    <h2>hi,imooc!</h2>
+    <!--下面是代码任务部分-->
+    <div class="wrap">
+        <h2>hi,imooc!</h2>
+    </div>
+
+    <!-- 通过table的形式，使多行文本居中 -->
+    <table>
+        <tbody>
+            <tr>
+                <td class="wrap">
+                    <div>
+                        <p>看我是否可以居中。</p>
+                        <p>看我是否可以居中。</p>
+                        <p>看我是否可以居中。</p>
+                        <p>看我是否可以居中。</p>
+                        <p>看我是否可以居中。</p>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <div class="container">
+        <div>
+            <p>看我是否可以居中。</p>
+            <p>看我是否可以居中。</p>
+            <p>看我是否可以居中。</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
