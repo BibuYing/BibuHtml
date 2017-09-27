@@ -1,0 +1,71 @@
+a{  
+    /* 去除下划线 */
+    text-decoration: none;
+    color: #EB0000;
+}
+
+#content{
+    width: 980px;
+    margin: 20px auto;
+}
+
+#head{
+    background: red;
+    width: 100%;
+    height: 100px;
+}
+
+#logo{
+    float: left;
+}
+
+#menu{
+    float: right;
+}
+
+#menu li { 
+    font-size: 1.1em;
+     /*将li转成内联元素 则列表变成横向展示 */
+    display: inline; 
+}
+
+#menu li a{
+    float: left;
+    width: 87px;
+    color: #636365;
+    /* 字体居中 */
+    text-align: center;
+    padding: 2px 0 7px;
+    margin: 0 0 0 10px;
+}
+
+#menu li a.select{
+    background: #fff url(../image/button.gif) no-repeat;
+    color: white;
+}
+
+#content_left{
+    background: blue;
+    width: 270px;
+    height: 100px;
+    float: left;
+}
+#content_center{
+    background: yellow;
+    width: 240px;
+    height: 100px;
+    float: left;
+}
+#content_right{
+    background: green;
+    width: 380px;
+    height: 100px;
+    float: right;
+}
+#footer{
+    background: pink;
+    /* 两边不能有浮动元素 */
+    clear: both;
+    font-size: .84em;
+    padding: 15px;
+}
