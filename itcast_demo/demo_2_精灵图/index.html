@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button {
+            height: 35px;
+            width: 88px;
+            background: url("qq.png") -348px -110px;
+            border: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .menu {
+            width: 1182px;
+            height: 48px;
+            background: black;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .menu ul li {
+            float: left;
+        }
+
+        .menu ul li a {
+            color: white;
+            height: 48px;
+            /* 变成块级元素，可以设定宽高*/
+            display: inline-block;
+            padding: 0 13px;
+            /* 字体16 行高48 */
+            font: 16px/48px "微软雅黑"
+        }
+        /* 普通状态 */
+
+        .menu ul li a:link {
+            background: black;
+        }
+        /* 已被访问 */
+        /* .menu ul li a:visited {
+            background: gray;
+        } */
+        /* 鼠标经过上面时 */
+
+        .menu ul li a:hover {
+            background: #3a92d0;
+        }
+        /* 鼠标点击时 */
+
+        .menu ul li a:active {
+            background: #0081D6;
+        }
+
+        .hot {
+            width: 31px;
+            height: 21px;
+            background: url("sprite.png") -57px 0;
+            position: absolute;
+            bottom: 34px;
+            left: 294px;
+        }
+
+        .new {
+            width: 31px;
+            height: 21px;
+            background: url("sprite.png") -135px 0;
+            position: absolute;
+            bottom: 34px;
+            left: 675px;
+        }
+    </style>
+</head>
+
+<body>
+    <button></button>
+
+    <div class="menu">
+        <div class="hot"></div>
+        <div class="new"></div>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#"> UI设计</a></li>
+            <li><a href="#">前端与移动开发</a></li>
+            <li><a href="#">问答专区</a></li>
+            <li><a href="#">iOS</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">C/C++</a></li>
+            <li><a href="#">python</a></li>
+            <li><a href="#">网络营销</a></li>
+            <li><a href="#">活动专区</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

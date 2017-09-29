@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+}
+
+
+a{  
+    /* 去除超链接下划线 */
+    text-decoration: none;
+}
+
+.clearfix:after{
+	display: block;
+	content: ".";
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix{
+	zoom:1;
+}
+
+
+.head>div,#menu,.content,.footer{
+    margin: 0 auto;
+    width: 970px;
+}
+
+.head{
+    background: #f7f7f7;
+    height: 30px;
+}
+
+.head span{
+    float: left;
+}
+
+.head ul{
+    float: right;
+    list-style: none;
+
+}
+
+.head ul li{
+    /* 变成块级元素，可以设定宽高*/
+    display: inline-block;
+}
+
+#logo{
+    margin: auto 0;
+}
+
+#logo img{
+    float: left;
+}
+
+
+
+#logo_search{
+    float: right;
+    height:35px;
+    width: 526px;
+}
+
+#logo_left{
+    float: left;
+    width: 200px;
+    height: 84px;
+}
+
+#logo_search input[type="text"]{
+    float: left;
+    width: 419px;
+	height: 28px;
+}
+#logo_search input[type="button"]{
+    float: left;
+    background: url("../images/serch.png");
+    width: 99px;
+	height: 32px;
+}
+
+
+#menu{
+    border-bottom: 3px solid #0266A2;
+    height: 25px;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li{
+    float: left;
+}
+
+#menu ul li a{
+    font-size: 14px;
+    padding: 0 20px;
+    color: #0266A2;
+    line-height: 25px;
+    display: inline-block;
+}
+#menu ul li a:hover{
+    background: #0266A2;
+    color: white;
+}
+

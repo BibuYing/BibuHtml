@@ -1,16 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body { 
+    font: .8em Tahoma, "Trebuchet MS", Tahoma, sans-serif; 
+    line-height: 1.6em; 
+    background: #fff url(../image/bg.gif) repeat-x; 
+    color: #8E8E91; }
 a{  
     /* 去除下划线 */
     text-decoration: none;
     color: #EB0000;
+    background: inherit;
+}
+a:hover { 
+    color: #808080; 
+    background: inherit; 
+    text-decoration: underline; 
+}
+p { 
+    margin: 0 0 15px 0; 
 }
 
-#content{
-    width: 980px;
-    margin: 20px auto;
+h1 { 
+    font: normal 2.8em Georgia, "Times New Roman", Arial; 
+    color: #444; 
+}
+h2 { 
+    font: normal 1.7em Georgia, "Times New Roman", Arial; 
+    margin: 0 0 10px; 
+    padding: 0 0 3px; 
+    color: #333; 
+    border-bottom: 1px solid #eee; 
+}
+
+
+
+
+img { border: 0; }
+
+.clear { 
+    clear: both; 
+}
+.smallthumb { 
+    width: 109px; 
+}
+
+.caption{
+    background: #fff url(../image/title.gif) no-repeat;
+    padding: 2px 0 0 18px; 
+    height: 35px; 
+    color: #fff;
+}
+.caption p{
+    margin: 0;
 }
 
 #head{
-    background: red;
     width: 100%;
     height: 100px;
 }
@@ -21,6 +67,7 @@ a{
 
 #menu{
     float: right;
+    padding: 40px 0 0;
 }
 
 #menu li { 
@@ -44,26 +91,56 @@ a{
     color: white;
 }
 
-#content_left{
-    background: blue;
-    width: 270px;
-    height: 100px;
-    float: left;
+#content{
+    width: 980px;
+    margin: 20px auto;
 }
+
+#content_left{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px;
+    clear: left;
+}
+
+.box{
+    background: #eee;
+    padding: 10px;
+}
+
+
+
+.box li{
+    list-style: none;
+    border-bottom: 1px dotted #ccc; 
+    line-height: 26px;
+}
+
+.box li a{
+    padding: 0 5px;
+}
+
+#content_left img{
+    padding: 6px; 
+    border-right: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc; 
+    background: #fff;
+}
+
 #content_center{
     background: yellow;
     width: 240px;
     height: 100px;
     float: left;
+    margin: 0 0 20px 15px;
 }
 #content_right{
-    background: green;
     width: 380px;
     height: 100px;
     float: right;
 }
 #footer{
-    background: pink;
+    background: #eee;
     /* 两边不能有浮动元素 */
     clear: both;
     font-size: .84em;
