@@ -109,7 +109,8 @@ a{
 }
 
 #banner{
-    
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 #banner_left{
@@ -160,3 +161,28 @@ a{
     float: left;
 }
 
+#bud{
+    width: 948px;
+    height: 34px;
+    background: #eaf0f6;
+    line-height: 34px;
+    border-top: 2px solid #c3d6e4;
+}
+
+#pro{
+    height: 344px;
+}
+
+#pro_left{
+    width: 727px;
+    height: 344px;
+    border: 1px solid #DFE6F0;
+    float: left;
+}
+
+#pro_right{
+    width: 238px;
+    height: 344px;
+    border: 1px solid #DFE6F0;
+    float: right;
+}
